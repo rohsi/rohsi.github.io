@@ -1,0 +1,28 @@
+
+* {
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+    color: #333;
+    font-size: 100%;
+    line-height: 1.5;
+  }
+  
+  .page {
+    background-image: url("https://source.unsplash.com/random/1920*1080");
+    // background-image: url("../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    margin: 0;
+    background-attachment: fixed;
+    background-color: black;
+    background-size: cover;
+    height: 100vh;
+    background-position: center center;              /* optional, center the image */
+    
+  }
+  
+
+.center{
+    text-align: center;
+  }
+  

@@ -1,0 +1,16 @@
+.newpage {
+	background-image: linear-gradient(
+		rgba(56,70,77,0.9),
+		rgba(56,70,77,0.9)),
+		url('../assets/mountain.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	text-align: center;
+	margin-top: -17px;
+
+	p{
+		text-align: center;
+	}
+  }
+  
