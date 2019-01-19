@@ -4,7 +4,8 @@ require('normalize.css/normalize.css');
 require('./styles/index.scss');
 require('./scripts/navbar.js');
 require('./scripts/aboutme.js');
-
+require('./scripts/certificates.js');
+new WOW().init();
 import PopperJs from 'popper.js';
 import 'bootstrap';
 

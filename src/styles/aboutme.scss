@@ -6,11 +6,25 @@
 	background-size: cover;
 	background-attachment: fixed;
 	height: 100vh;
-	text-align: center;
-	margin-top: -17px;
+    display: flex;
+	flex-direction: column;
+	justify-content:space-around;
+	align-items: center;
+
+	
+	padding: 12rem;
+	
+	
+
+
 
 	p{
-		text-align: center;
+		line-height: 1.8;
+		max-width: 114rem;
+		color: #eee;
+		width: 80%;
+		text-align: left;
+		font-size: 20px;
 	}
   }
   
