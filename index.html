@@ -15,7 +15,7 @@
     <meta property="og:image" content="https://i.snag.gy/i3eMBc.jpg" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
+    <script src="https://unpkg.com/ionicons@4.5.1/dist/ionicons.js"></script>
     <meta property="og:description" content="A simple webpack starter project for your basic web development needs." />
     <!-- Mobile header color for Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#ff4970">
@@ -26,106 +26,123 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
-
+    <ion-icon src=" /home/rohit/workspace/rohsi.github.io/src/assets/_ionicons_svg_logo-github.svg"></ion-icon>
     <script src="https://wowjs.uk/dist/wow.min.js"></script>
 </head>
 
 <body>
 
-    <section class="page">
+
+    <div class="navigation">
+        <div id="wrapper">
+            <div class="overlay"></div>
+
+            <!-- Sidebar -->
+            <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
+                <ul class="nav sidebar-nav">
+                    <div class="sidebar-header">
+                        <div class="sidebar-brand">
+                            <a href="#">Home</a></div>
+                    </div>
+
+                    <li><a href="#home">About Me</a></li>
+                    <li><a href="#about">About</a></li>
 
 
-        <div class="navigation">
-            <div id="wrapper">
-                <div class="overlay"></div>
-
-                <!-- Sidebar -->
-                <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
-                    <ul class="nav sidebar-nav">
-                        <div class="sidebar-header">
-                            <div class="sidebar-brand">
-                                <a href="#">Home</a></div>
-                        </div>
-
-                        <li><a href="#home">About Me</a></li>
-                        <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#team">Team</a></li>
 
 
-                        <li><a href="#events">Events</a></li>
-                        <li><a href="#team">Team</a></li>
-
-
-                        <li class="dropdown">
-                            <a href="#works" class="dropdown-toggle" data-toggle="dropdown">Works <span class="caret"></span></a>
-                            <ul class="dropdown-menu animated fadeInLeft" role="menu">
-                                <div class="dropdown-header">Dropdown heading</div>
-                                <li><a href="#pictures">Pictures</a></li>
-                                <li><a href="#videos">Videeos</a></li>
-                                <li><a href="#books">Books</a></li>
-                                <li><a href="#art">Art</a></li>
-                                <li><a href="#awards">Awards</a></li>
-                            </ul>
-                        </li>
+                    <li class="dropdown">
+                        <a href="#works" class="dropdown-toggle" data-toggle="dropdown">Works <span class="caret"></span></a>
+                        <ul class="dropdown-menu animated fadeInLeft" role="menu">
+                            <div class="dropdown-header">Dropdown heading</div>
+                            <li><a href="#pictures">Pictures</a></li>
+                            <li><a href="#videos">Videeos</a></li>
+                            <li><a href="#books">Books</a></li>
+                            <li><a href="#art">Art</a></li>
+                            <li><a href="#awards">Awards</a></li>
+                        </ul>
+                    </li>
 
 
 
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#followme">Follow me</a></li>
-                    </ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#followme">Follow me</a></li>
+                </ul>
 
 
-                </nav>
-                <!-- /#sidebar-wrapper -->
+            </nav>
+            <!-- /#sidebar-wrapper -->
 
-                <!-- Page Content -->
-                <div id="page-content-wrapper">
-                    <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
-                        <span class="hamb-top"></span>
-                        <span class="hamb-middle"></span>
-                        <span class="hamb-bottom"></span>
-                    </button>
-
-                </div>
-                <!-- /#page-content-wrapper -->
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+                    <span class="hamb-top"></span>
+                    <span class="hamb-middle"></span>
+                    <span class="hamb-bottom"></span>
+                </button>
 
             </div>
+            <!-- /#page-content-wrapper -->
+
+        </div>
+    </div>
+
+
+    <header class="page " data-rellax-speed="1">
+
+
+        <div class="text rellax animated  slideInLeft delay-1s" data-rellax-speed="-2">
+            <h2>Rohit Pankaj Sinha</h2>
+
+
+
+        </div>
+        <div class="text rellax animated  slideInRight delay-1s" data-rellax-speed="-4">
+
+
+
+            <h3> Front End Developer</h3>
         </div>
 
-
         <!-- /#wrapper -->
-    </section>
+    </header>
 
 
-    <section class="newpage" id="about">
-        <img src="./src/assets/sdf.jpg" class="img-me" alt="Jonas Schmedtmann">
-        <p>
-            HI, I'M JONAS! I’m a web designer and developer with a great passion for building new things from scratch.
+    <section class="newpage " id="about" data-rellax-speed="1.5" style="position:sticky;">
+        <img src="<%= require('./src/assets/Akshay_Kumar.jpg') %>" class="img-me " alt="Jonas Schmedtmann">
+        <h3>HI, I'M Rohit!</h3>
+        <p class="wow animated slideInLeft  ">
+            I’m a web designer and developer with a great passion for building new things from scratch.
             I live in the charming city of Lisbon where I create beautiful websites, just like the one you’re about
             to build in one of my courses. I love everything about tech, riding my bike, and the beach in the
             summer.
         </p>
-        <p>
+        <p class="wow animated slideInLeft ">
             As an online instructor, I get to mix my two great passions: building beautiful websites and
             teaching. If I had to describe my coding courses in one sentence,<span>These are exactly the
                 courses I wish I had when I first started with web design and development”. </span>
         </p>
-        <p>
+        <p class="wow animated slideInLeft  ">
             I would say I want to spare you the
             hassle of going through uncountable books and articles, so I packed everything I learned about building
             websites right into my video courses.
         </p>
-        <p>I guarentee 100% to offer the best value in all my courses, so
+        <p class="wow animated slideInLeft  ">
+            I guarentee 100% to offer the best value in all my courses, so
             you can achieve your goals! However, if you don't find value in them for any reason, I will give you a
             full refund of your money during 30 days. Plus, I will be available to answer all the questions you
             might have along your coding journey.
         </p>
-        <p>
+        <p class="wow animated slideInLeft ">
             So, let's start learning today!
         </p>
     </section>
 
-    <section class="certificates">
+    <section class="
+            certificates " data-rellax-speed=" 2">
         <div id="work-experience" class="sectionClass">
             <div class="row ">
                 <div class="sectiontitle">
@@ -135,21 +152,24 @@
                 <div class="fullWidth eight columns">
                     <ul class="cbp_tmtimeline">
                         <li>
-                            <div class="cbp_tmicon cbp_tmicon-phone">
-                                <i class="fas fa-award fa-10x"></i>
+                            <div class="cbp_tmicon cbp_tmicon-phone ">
+                                <i class="fas fa-award fa-10x "></i>
                             </div>
                             <div class="cbp_tmlabel wow fadeInRight animated">
                                 <h3>
-                                    <a href="https://www.udemy.com/vuejs-2-the-complete-guide/" target="_blank"> Vue JS
+                                    <a href="https://www.udemy.com/vuejs-2-the-complete-guide/" target="_blank">
+                                        Vue JS
                                         2 - The
                                         Complete Guide (incl. Vue Router & Vuex)</a>
 
 
                                 </h3>
 
-                                <h4><i class="fa fa-flag"></i>Udemy</h4>
-                                <p class="projectParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Fugit obcaecati ipsa quae, iusto laudantium qui, nisi eum modi perspiciatis quasi
+                                <h4><i class="fa fa-flag "></i>Udemy</h4>
+                                <p class="projectParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit.
+                                    Fugit obcaecati ipsa quae, iusto laudantium qui, nisi eum modi perspiciatis
+                                    quasi
                                     facilis corporis iure soluta enim incidunt itaque aspernatur sequi tempora.</p>
                             </div>
                         </li>
@@ -160,11 +180,14 @@
                             <div class="cbp_tmlabel wow fadeInRight animated">
                                 <h3><a href="https://www.udemy.com/build-web-apps-with-vuejs-firebase/learn/v4/overview"
                                         target="blank">
-                                        React 16.6 - The Complete Guide (incl. React Router & Redux)
+                                        Build Web Apps with Vue JS 2 & Firebase
+
                                     </a></h3>
                                 <h4><i class="fa fa-flag"></i>Udemy</h4>
-                                <p class="projectParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Deserunt quasi perspiciatis, aliquid sed maiores accusamus. Adipisci quidem nostrum
+                                <p class="projectParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit.
+                                    Deserunt quasi perspiciatis, aliquid sed maiores accusamus. Adipisci quidem
+                                    nostrum
                                     quos quae doloremque esse a, ipsum earum, recusandae omnis dignissimos et sint.</p>
                             </div>
                         </li>
@@ -178,8 +201,10 @@
                                         React 16.6 - The Complete Guide (incl. React Router & Redux)
                                     </a></h3>
                                 <h4><i class="fa fa-flag"></i>Udemy</h4>
-                                <p class="projectParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Deserunt quasi perspiciatis, aliquid sed maiores accusamus. Adipisci quidem nostrum
+                                <p class="projectParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit.
+                                    Deserunt quasi perspiciatis, aliquid sed maiores accusamus. Adipisci quidem
+                                    nostrum
                                     quos quae doloremque esse a, ipsum earum, recusandae omnis dignissimos et sint.</p>
                             </div>
                         </li>
@@ -191,12 +216,16 @@
                                 <h3><a href='https://www.udemy.com/advanced-css-and-sass/learn/v4/overview' target='blank'>
                                         Advanced CSS and Sass: Flexbox, Grid, Animations and More!</a></h3>
                                 <h4><i class="fa fa-flag"></i>Udemy</h4>
-                                <p class="projectParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Nulla labore atque alias ipsa, nam quod rerum repellat cumque, aliquam sequi vitae
-                                    voluptatibus cum soluta incidunt tempore accusamus eius sed excepturi!Lorem ipsum
+                                <p class="projectParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit.
+                                    Nulla labore atque alias ipsa, nam quod rerum repellat cumque, aliquam sequi
+                                    vitae
+                                    voluptatibus cum soluta incidunt tempore accusamus eius sed excepturi!Lorem
+                                    ipsum
                                     dolor sit amet,
                                     consectetur adipisicing elit. Tempora natus veritatis aperiam repellendus dolor
-                                    vel, expedita assumenda eos, mollitia quae ullam esse voluptas vero. Dolores culpa
+                                    vel, expedita assumenda eos, mollitia quae ullam esse voluptas vero. Dolores
+                                    culpa
                                     eaque vitae eum quibusdam?</p>
 
                             </div>
@@ -210,8 +239,10 @@
                                         target="blank">
                                         The Complete JavaScript Course 2019: Build Real Projects!</a></h3>
                                 <h4><i class="fa fa-flag"></i>Udemy</h4>
-                                <p class="projectParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Esse iusto, possimus hic at quisquam, incidunt illo asperiores et nobis, qui nulla
+                                <p class="projectParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit.
+                                    Esse iusto, possimus hic at quisquam, incidunt illo asperiores et nobis, qui
+                                    nulla
                                     consequatur molestiae quibusdam expedita dignissimos? Iste eum velit quos.</p>
                             </div>
                         </li>
@@ -222,6 +253,25 @@
 
 
     </section>
+    <footer class="footer">
+        <div class="flex container footer__primary">
+            <div>
+
+                <a href="https://github.com/rohsi/rohsi.github.io" target="blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="https://www.linkedin.com/" target="blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+
+            </div>
+            <div class="footer__copyright">
+                Copyright &copy; 2019 Rohit Pankaj Sinha
+            </div>
+
+            </nav>
+        </div>
+    </footer>
 
 </body>
 

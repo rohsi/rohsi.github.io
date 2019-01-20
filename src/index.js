@@ -5,17 +5,22 @@ require('./styles/index.scss');
 require('./scripts/navbar.js');
 require('./scripts/aboutme.js');
 require('./scripts/certificates.js');
+import Rellax from 'rellax';
+
 new WOW().init();
 import PopperJs from 'popper.js';
 import 'bootstrap';
 
+
 import jquery from 'jquery';
 
+// Accepts any class name
+var rellax = new Rellax('.rellax', {
+    center: true,
+    // round: true,
+    vertical: true
 
-// jquery(() => {
-//     console.log('Hello jQuery + bootstrap 4!');
-// });
-
+});
 
 document.addEventListener("DOMContentLoaded", () => {
 
